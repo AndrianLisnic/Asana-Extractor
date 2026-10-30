@@ -34,8 +34,8 @@ Optional variables:
 
 ```powershell
 $env:EXTRACTOR_BASE_URL="https://app.asana.com"
-$env:PROJECTS_OUTPUT_PATH="data/projects/projects.json"
-$env:USERS_OUTPUT_PATH="data/users/users.json"
+$env:PROJECTS_OUTPUT_PATH="data/projects/"
+$env:USERS_OUTPUT_PATH="data/users/"
 ```
 
 `PULL_INTERVAL` accepts Go duration values such as `30s` or `5m`; the default is `30s`. `PER_PAGE` must be between 1 and 100; the default is 10. `PROJECTS_OUTPUT_PATH` and `USERS_OUTPUT_PATH` are currently retained as configuration defaults for compatibility; output is organized under `data/<timestamp>/`.

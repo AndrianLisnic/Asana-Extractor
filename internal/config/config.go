@@ -54,15 +54,12 @@ func Load() (Config, error) {
 
 	outputPath := os.Getenv("PROJECTS_OUTPUT_PATH")
 	if outputPath == "" {
-		outputPath = os.Getenv("OUTPUT_PATH")
-	}
-	if outputPath == "" {
-		outputPath = "data/projects.json"
+		outputPath = "data/projects/"
 	}
 
 	usersOutputPath := os.Getenv("USERS_OUTPUT_PATH")
 	if usersOutputPath == "" {
-		usersOutputPath = "data/users.json"
+		usersOutputPath = "data/users/"
 	}
 
 	return Config{
